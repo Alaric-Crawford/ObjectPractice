@@ -8,21 +8,9 @@ namespace ObjectPractice
 {
     class Sword
     {
-        public string TwoHanded { get; set; }
-        public string OneHanded { get; set; }
-        public string DualBladed { get; set; }
+        public string SwordName { get; set; }
+        public string SwordClass { get; set; }
 
-        public void TwoHands(string swordName)
-        {
-            this.TwoHanded = swordName;
-        }
-        public void OneHand(string bladeName)
-        {
-            this.OneHanded = bladeName;
-        }
-        public void DualWield(string dualNames)
-        {
-            this.DualBladed = dualNames;
-        }
+
     }
 }

@@ -10,14 +10,14 @@ namespace ObjectPractice
     {
         static void Main(string[] args)
         {
-            var england = new Sword("claymore", "two-handed");
-            Console.WriteLine("The " + england.SwordName + " is a lightweight " + england.SwordClass + " blade.");
+            var england = new Sword("claymore", "two-handed", "English");
+            Console.WriteLine("The " + england.SwordName + " is a lightweight " + england.SwordClass + england.CountryOrigin + " blade.");
 
-            var german = new Sword("zweihander", "two-handed");
-            Console.WriteLine("The " + german.SwordName + " is a heavy " + german.SwordClass + " blade.");
+            var germany = new Sword("zweihander", "two-handed", "German");
+            Console.WriteLine("The " + germany.SwordName + " is a heavy " + germany.SwordClass + germany.CountryOrigin + " blade.");
 
-            var turkey = new Sword("tulwar", "one-handed");
-            Console.WriteLine("The " + turkey.SwordName + " is a medium weight " + turkey.SwordClass + " blade.");
+            var turkey = new Sword("tulwar", "one-handed", "Turkish");
+            Console.WriteLine("The " + turkey.SwordName + " is a medium weight " + turkey.SwordClass + turkey.CountryOrigin + " blade.");
 
             Console.ReadKey();
         }
